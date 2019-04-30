@@ -4,7 +4,14 @@ public class Imovel {
     private String endereco;
     private double preco;
 
+
+
     public Imovel() {
+
+    }
+
+    public Imovel(String endereco) {
+        this.endereco = endereco;
     }
 
     public String getEndereco() {
