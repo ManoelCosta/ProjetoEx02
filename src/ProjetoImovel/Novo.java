@@ -1,15 +1,7 @@
 package ProjetoImovel;
 
 public class Novo extends Imovel{
-
     private double adicional;
-
-    public Novo() {
-    }
-
-    public Novo(String endereco) {
-        super(endereco);
-    }
 
     public double getAdicional() {
         return adicional;
@@ -19,7 +11,9 @@ public class Novo extends Imovel{
         this.adicional = adicional;
     }
 
-    public void novoPreco(){
-        System.out.println(adicional + getPreco());
+    public void impressao(){
+        System.out.println("O valor dos imoveis é "+getPreco());
+        System.out.println("O valor do adicional para imoveis novos é "+getAdicional());
+        System.out.println("O valor de um imovel novo é de: "+ (getPreco() + getAdicional()));
     }
 }

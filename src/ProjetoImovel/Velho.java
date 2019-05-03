@@ -3,14 +3,6 @@ package ProjetoImovel;
 public class Velho extends Imovel{
     private double desconto;
 
-    public Velho() {
-    }
-
-    public Velho(String endereco) {
-        super(endereco);
-    }
-
-
     public double getDesconto() {
         return desconto;
     }
@@ -19,7 +11,9 @@ public class Velho extends Imovel{
         this.desconto = desconto;
     }
 
-    public void novoPreco(){
-        System.out.println(desconto + getPreco());
+    public void impressao(){
+        System.out.println("O valor dos imoveis é "+getPreco());
+        System.out.println("O valor do desconto para imoveis velhos é "+getDesconto());
+        System.out.println("O valor de um imovel velho é "+(getPreco() - getDesconto()));
     }
 }
